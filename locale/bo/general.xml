@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+	<entity id="module-name">
+		<locale lang="fr">zone</locale>
+		<locale lang="en">zone</locale>
+	</entity>
+
+	<entity id="tree-root-name">
+		<locale lang="fr">zone</locale>
+		<locale lang="en">zone</locale>
+	</entity>
+
+	<entity id="system-folder-name">
+		<locale lang="fr">zone</locale>
+		<locale lang="en">zone</locale>
+	</entity>
+	
+	<entity id="countries">
+		<locale lang="fr">pays</locale>
+		<locale lang="en">countries</locale>
+	</entity>
+	
+	<entity id="defaultTag">
+		<locale lang="fr">zone par défaut</locale>
+		<locale lang="en">default zone</locale>
+	</entity>
+	
+	<entity id="column.code">
+		<locale lang="fr">code</locale>
+		<locale lang="en">code</locale>
+	</entity>
+</localization>

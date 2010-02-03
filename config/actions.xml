@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<actions extends="generic">
+  <action name="createZone">
+    <parameter name="listWidget"/>
+    <body><![CDATA[
+    	this.createDocumentEditor('modules_zone_zone', listWidget.getSelectedItems()[0].id);
+		]]></body>
+  </action>
+  <action name="setDefaultZone">
+    <parameter name="listWidget"/>
+    <body><![CDATA[
+		var ids = listWidget.getSelectedIds();
+		this.execute("AddTag", "AddTag", {cmpref: ids[0], tag: 'default_zone'});
+		]]></body>
+  </action>  
+</actions>

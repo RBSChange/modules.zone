@@ -1,0 +1,9 @@
+treechildren::-moz-tree-image(modules_zone_zone){
+	list-style-image: url(/icons/small/zone.png) ;
+}
+treechildren::-moz-tree-image(modules_zone_zone default_zone){
+	list-style-image: url(/icons/small/zone.png) ;
+}
+treechildren::-moz-tree-image(modules_zone_country){
+	list-style-image: url(/icons/small/country.png) ;
+}

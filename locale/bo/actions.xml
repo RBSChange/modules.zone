@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+	<entity id="CreateZone">
+		<locale lang="fr">ajouter une zone</locale>
+		<locale lang="en">add zone</locale>
+	</entity>
+	
+	<entity id="Create_">
+		<locale lang="fr">ajouter</locale>
+		<locale lang="en">add</locale>
+	</entity>
+	
+	<entity id="createCountryRef">
+		<locale lang="fr">affecter un pays</locale>
+	</entity>
+	
+	<entity id="setDefault">
+		<locale lang="fr">zone par défaut</locale>
+		<locale lang="en">default zone</locale>
+	</entity>
+</localization>
