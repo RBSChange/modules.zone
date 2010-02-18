@@ -27,7 +27,7 @@
 			<permission name="Order" />
 			<permission name="LoadTags"/>
 		</role>		
-		<role name="User" extend="User">
+		<role name="User">
 			<permission name="Enabled" />
 			<permission name="List.*" />
 		</role>	
