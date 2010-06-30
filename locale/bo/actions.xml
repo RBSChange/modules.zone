@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <localization>
-	<entity id="CreateZone">
-		<locale lang="fr">ajouter une zone</locale>
-		<locale lang="en">add zone</locale>
-	</entity>
-	
-	<entity id="Create_">
+	<entity id="create_">
 		<locale lang="fr">ajouter</locale>
 		<locale lang="en">add</locale>
 	</entity>
 	
-	<entity id="createCountryRef">
-		<locale lang="fr">affecter un pays</locale>
+	<entity id="createfolderzone_">
+		<locale lang="fr">ajouter</locale>
+		<locale lang="en">add</locale>
 	</entity>
+	
+	<entity id="createzone">
+		<locale lang="fr">ajouter une zone</locale>
+		<locale lang="en">add zone</locale>
+	</entity>
+	
+	<entity id="createcountry">
+		<locale lang="fr">ajouter un pays</locale>
+		<locale lang="en">add country</locale>
+	</entity>
+	
+	<entity id="createDepartment">
+		<locale lang="fr">ajouter un départment</locale>
+		<locale lang="en">add department</locale>
+	</entity>	
 	
 	<entity id="setDefault">
 		<locale lang="fr">zone par défaut</locale>

@@ -4,261 +4,371 @@
 	<binding fileName="modules/zone/persistentdocument/import/zone_binding.xml" />
 
 	<systemfolder module="list" relatedmodule="zone">
-		<dynamiclist listid="modules_zone/publishedcountries"
-			label="Tous les pays" description="Liste de tous les pays publiés.">
+		<dynamiclist listid="modules_zone/publishedcountries" label="Tous les pays" description="Liste de tous les pays publiés.">
 		</dynamiclist>
-		<dynamiclist listid="modules_zone/validator" 
-			label="Validateurs" description="Liste des validateurs">
-		</dynamiclist>	
 	</systemfolder>
 
 	<rootfolder module="zone">
-		<folder byLabel="Pays">
-			<country code="AD" label-en="Andorra" label-fr="Andorre" />
-			<country code="AE" label-en="United Arab Emirates" label-fr="Émirats arabes unis" />
-			<country code="AF" label-en="Afghanistan" label-fr="Afghanistan" />
-			<country code="AG" label-en="Antigua and Barbuda" label-fr="Antigua-et-Barbuda" />
-			<country code="AI" label-en="Anguilla" label-fr="Anguilla" />
-			<country code="AL" label-en="Albania" label-fr="Albanie" />
-			<country code="AM" label-en="Armenia" label-fr="Arménie" />
-			<country code="AN" label-en="Netherlands Antilles" label-fr="Antilles néerlandaises" />
-			<country code="AO" label-en="Angola" label-fr="Angola" />
-			<country code="AP" label-en="Asia/Pacific Region" label-fr="Région pacifique en Asie" />
-			<country code="AQ" label-en="Antarctica" label-fr="Antarctique" />
-			<country code="AR" label-en="Argentina" label-fr="Argentine" />
-			<country code="AS" label-en="American Samoa" label-fr="Samoa américaines" />
-			<country code="AT" label-en="Austria" label-fr="Autriche" />
-			<country code="AU" label-en="Australia" label-fr="Australie" />
-			<country code="AW" label-en="Aruba" label-fr="Aruba" />
-			<country code="AZ" label-en="Azerbaijan" label-fr="Azerbaïdjan" />
-			<country code="BA" label-en="Bosnia and Herzegovina" label-fr="Bosnie-Herzégovine" />
-			<country code="BB" label-en="Barbados" label-fr="Barbade" />
-			<country code="BD" label-en="Bangladesh" label-fr="Bangladesh" />
-			<country code="BE" label-en="Belgium" label-fr="Belgique" />
-			<country code="BF" label-en="Burkina Faso" label-fr="Burkina Faso" />
-			<country code="BG" label-en="Bulgaria" label-fr="Bulgarie" />
-			<country code="BH" label-en="Bahrain" label-fr="Bahreïn" />
-			<country code="BI" label-en="Burundi" label-fr="Burundi" />
-			<country code="BJ" label-en="Benin" label-fr="Bénin" />
-			<country code="BM" label-en="Bermuda" label-fr="Bermudes" />
-			<country code="BN" label-en="Brunei Darussalam" label-fr="Brunei" />
-			<country code="BO" label-en="Bolivia" label-fr="Bolivie" />
-			<country code="BR" label-en="Brazil" label-fr="Brésil" />
-			<country code="BS" label-en="Bahamas" label-fr="Bahamas" />
-			<country code="BT" label-en="Bhutan" label-fr="Bhoutan" />
-			<country code="BV" label-en="Bouvet Island" label-fr="Île Bouvet" />
-			<country code="BW" label-en="Botswana" label-fr="Botswana" />
-			<country code="BY" label-en="Belarus" label-fr="Biélorussie" />
-			<country code="BZ" label-en="Belize" label-fr="Belize" />
-			<country code="CA" label-en="Canada" label-fr="Canada" />
-			<country code="CC" label-en="Cocos (Keeling) Islands" label-fr="Îles Cocos" />
-			<country code="CD" label-en="Congo, The Democratic Republic of the" label-fr="République démocratique du Congo" />
-			<country code="CF" label-en="Central African Republic" label-fr="Centrafrique" />
-			<country code="CG" label-en="Congo" label-fr="Congo" />
-			<country code="CH" label-en="Switzerland" label-fr="Suisse" />
-			<country code="CI" label-en="Cote D'Ivoire" label-fr="Côte d'Ivoire" />
-			<country code="CK" label-en="Cook Islands" label-fr="Îles Cook" />
-			<country code="CL" label-en="Chile" label-fr="Chili" />
-			<country code="CM" label-en="Cameroon" label-fr="Cameroun" />
-			<country code="CN" label-en="China" label-fr="Chine" />
-			<country code="CO" label-en="Colombia" label-fr="Colombie" />
-			<country code="CR" label-en="Costa Rica" label-fr="Costa Rica" />
-			<country code="CS" label-en="Serbia and Montenegro" label-fr="Serbie et Montenegro" />
-			<country code="CU" label-en="Cuba" label-fr="Cuba" />
-			<country code="CV" label-en="Cape Verde" label-fr="Cap-Vert" />
-			<country code="CX" label-en="Christmas Island" label-fr="Île Christmas" />
-			<country code="CY" label-en="Cyprus" label-fr="Chypre" />
-			<country code="CZ" label-en="Czech Republic" label-fr="République tchèque" />
-			<country code="DE" label-en="Germany" label-fr="Allemagne" />
-			<country code="DJ" label-en="Djibouti" label-fr="Djibouti" />
-			<country code="DK" label-en="Denmark" label-fr="Danemark" />
-			<country code="DM" label-en="Dominica" label-fr="Dominique" />
-			<country code="DO" label-en="Dominican Republic" label-fr="République dominicaine" />
-			<country code="DZ" label-en="Algeria" label-fr="Algérie" />
-			<country code="EC" label-en="Ecuador" label-fr="Équateur" />
-			<country code="EE" label-en="Estonia" label-fr="Estonie" />
-			<country code="EG" label-en="Egypt" label-fr="Égypte" />
-			<country code="EH" label-en="Western Sahara" label-fr="Sahara occidental" />
-			<country code="ER" label-en="Eritrea" label-fr="Érythrée" />
-			<country code="ES" label-en="Spain" label-fr="Espagne" />
-			<country code="ET" label-en="Ethiopia" label-fr="Éthiopie" />
-			<country code="FI" label-en="Finland" label-fr="Finlande" />
-			<country code="FJ" label-en="Fiji" label-fr="Fidji" />
-			<country code="FK" label-en="Falkland Islands (Malvinas)" label-fr="Îles Malouines (Falkland)" />
-			<country code="FM" label-en="Micronesia, Federated States of" label-fr="Micronésie" />
-			<country code="FO" label-en="Faroe Islands" label-fr="Îles Féroé" />
-			<country id="FR" code="FR" label-en="France" label-fr="France" />
-			<country code="FX" label-en="France, Metropolitan" label-fr="France métropolitaine" />
-			<country code="GA" label-en="Gabon" label-fr="Gabon" />
-			<country code="GB" label-en="United Kingdom" label-fr="Royaume-Uni" />
-			<country code="GD" label-en="Grenada" label-fr="Grenade" />
-			<country code="GE" label-en="Georgia" label-fr="Géorgie" />
-			<country code="GF" label-en="French Guiana" label-fr="Guyane (France)" />
-			<country code="GH" label-en="Ghana" label-fr="Ghana" />
-			<country code="GI" label-en="Gibraltar" label-fr="Gibraltar" />
-			<country code="GL" label-en="Greenland" label-fr="Groenland" />
-			<country code="GM" label-en="Gambia" label-fr="Gambie" />
-			<country code="GN" label-en="Guinea" label-fr="Guinée" />
-			<country code="GP" label-en="Guadeloupe" label-fr="Guadeloupe" />
-			<country code="GQ" label-en="Equatorial Guinea" label-fr="Guinée équatoriale" />
-			<country code="GR" label-en="Greece" label-fr="Grèce" />
-			<country code="GS" label-en="South Georgia and the South Sandwich Islands" label-fr="Géorgie du Sud et les îles Sandwich du Sud" />
-			<country code="GT" label-en="Guatemala" label-fr="Guatemala" />
-			<country code="GU" label-en="Guam" label-fr="Guam" />
-			<country code="GW" label-en="Guinea-Bissau" label-fr="Guinée-Bissau" />
-			<country code="GY" label-en="Guyana" label-fr="Guyana" />
-			<country code="HK" label-en="Hong Kong" label-fr="Hong Kong" />
-			<country code="HM" label-en="Heard Island and McDonald Islands" label-fr="Île Heard et îles McDonald" />
-			<country code="HN" label-en="Honduras" label-fr="Honduras" />
-			<country code="HR" label-en="Croatia" label-fr="Croatie" />
-			<country code="HT" label-en="Haiti" label-fr="Haïti" />
-			<country code="HU" label-en="Hungary" label-fr="Hongrie" />
-			<country code="ID" label-en="Indonesia" label-fr="Indonésie" />
-			<country code="IE" label-en="Ireland" label-fr="Irlande" />
-			<country code="IL" label-en="Israel" label-fr="Israël" />
-			<country code="IN" label-en="India" label-fr="Inde" />
-			<country code="IO" label-en="British Indian Ocean Territory" label-fr="Territoire britannique de l'océan Indien" />
-			<country code="IQ" label-en="Iraq" label-fr="Irak" />
-			<country code="IR" label-en="Iran, Islamic Republic of" label-fr="Iran" />
-			<country code="IS" label-en="Iceland" label-fr="Islande" />
-			<country code="IT" label-en="Italy" label-fr="Italie" />
-			<country code="JM" label-en="Jamaica" label-fr="Jamaïque" />
-			<country code="JO" label-en="Jordan" label-fr="Jordanie" />
-			<country code="JP" label-en="Japan" label-fr="Japon" />
-			<country code="KE" label-en="Kenya" label-fr="Kenya" />
-			<country code="KG" label-en="Kyrgyzstan" label-fr="Kirghizistan" />
-			<country code="KH" label-en="Cambodia" label-fr="Cambodge" />
-			<country code="KI" label-en="Kiribati" label-fr="Kiribati" />
-			<country code="KM" label-en="Comoros" label-fr="Comores" />
-			<country code="KN" label-en="Saint Kitts and Nevis" label-fr="Saint-Christophe-et-Niévès" />
-			<country code="KP" label-en="Korea, Democratic People's Republic of" label-fr="Corée du Nord" />
-			<country code="KR" label-en="Korea, Republic of" label-fr="Corée du Sud" />
-			<country code="KW" label-en="Kuwait" label-fr="Koweït" />
-			<country code="KY" label-en="Cayman Islands" label-fr="Îles Caïmanes" />
-			<country code="KZ" label-en="Kazakhstan" label-fr="Kazakhstan" />
-			<country code="LA" label-en="Lao People's Democratic Republic" label-fr="Laos" />
-			<country code="LB" label-en="Lebanon" label-fr="Liban" />
-			<country code="LC" label-en="Saint Lucia" label-fr="Sainte-Lucie" />
-			<country code="LI" label-en="Liechtenstein" label-fr="Liechtenstein" />
-			<country code="LK" label-en="Sri Lanka" label-fr="Sri Lanka" />
-			<country code="LR" label-en="Liberia" label-fr="Libéria" />
-			<country code="LS" label-en="Lesotho" label-fr="Lesotho" />
-			<country code="LT" label-en="Lithuania" label-fr="Lituanie" />
-			<country code="LU" label-en="Luxembourg" label-fr="Luxembourg" />
-			<country code="LV" label-en="Latvia" label-fr="Lettonie" />
-			<country code="LY" label-en="Libyan Arab Jamahiriya" label-fr="Libye" />
-			<country code="MA" label-en="Morocco" label-fr="Maroc" />
-			<country code="MC" label-en="Monaco" label-fr="Monaco" />
-			<country code="MD" label-en="Moldova, Republic of" label-fr="Moldavie" />
-			<country code="MG" label-en="Madagascar" label-fr="Madagascar" />
-			<country code="MH" label-en="Marshall Islands" label-fr="Marshall" />
-			<country code="MK" label-en="Macedonia" label-fr="Macédoine" />
-			<country code="ML" label-en="Mali" label-fr="Mali" />
-			<country code="MM" label-en="Myanmar" label-fr="Birmanie" />
-			<country code="MN" label-en="Mongolia" label-fr="Mongolie" />
-			<country code="MO" label-en="Macau" label-fr="Macao" />
-			<country code="MP" label-en="Northern Mariana Islands" label-fr="Îles Mariannes du Nord" />
-			<country code="MQ" label-en="Martinique" label-fr="Martinique" />
-			<country code="MR" label-en="Mauritania" label-fr="Mauritanie" />
-			<country code="MS" label-en="Montserrat" label-fr="Montserrat" />
-			<country code="MT" label-en="Malta" label-fr="Malte" />
-			<country code="MU" label-en="Mauritius" label-fr="Maurice" />
-			<country code="MV" label-en="Maldives" label-fr="Maldives" />
-			<country code="MW" label-en="Malawi" label-fr="Malawi" />
-			<country code="MX" label-en="Mexico" label-fr="Mexique" />
-			<country code="MY" label-en="Malaysia" label-fr="Malaisie" />
-			<country code="MZ" label-en="Mozambique" label-fr="Mozambique" />
-			<country code="NA" label-en="Namibia" label-fr="Namibie" />
-			<country code="NC" label-en="New Caledonia" label-fr="Nouvelle-Calédonie" />
-			<country code="NE" label-en="Niger" label-fr="Niger" />
-			<country code="NF" label-en="Norfolk Island" label-fr="Norfolk" />
-			<country code="NG" label-en="Nigeria" label-fr="Nigeria" />
-			<country code="NI" label-en="Nicaragua" label-fr="Nicaragua" />
-			<country code="NL" label-en="Netherlands" label-fr="Pays-Bas" />
-			<country code="NO" label-en="Norway" label-fr="Norvège" />
-			<country code="NP" label-en="Nepal" label-fr="Népal" />
-			<country code="NR" label-en="Nauru" label-fr="Nauru" />
-			<country code="NU" label-en="Niue" label-fr="Niué" />
-			<country code="NZ" label-en="New Zealand" label-fr="Nouvelle-Zélande" />
-			<country code="OM" label-en="Oman" label-fr="Oman" />
-			<country code="PA" label-en="Panama" label-fr="Panamá" />
-			<country code="PE" label-en="Peru" label-fr="Pérou" />
-			<country code="PF" label-en="French Polynesia" label-fr="Polynésie française" />
-			<country code="PG" label-en="Papua New Guinea" label-fr="Papouasie-Nouvelle-Guinée" />
-			<country code="PH" label-en="Philippines" label-fr="Philippines" />
-			<country code="PK" label-en="Pakistan" label-fr="Pakistan" />
-			<country code="PL" label-en="Poland" label-fr="Pologne" />
-			<country code="PM" label-en="Saint Pierre and Miquelon" label-fr="Saint-Pierre-et-Miquelon" />
-			<country code="PN" label-en="Pitcairn" label-fr="Pitcairn" />
-			<country code="PR" label-en="Puerto Rico" label-fr="Porto Rico" />
-			<country code="PS" label-en="Palestinian Territory" label-fr="Palestine" />
-			<country code="PT" label-en="Portugal" label-fr="Portugal" />
-			<country code="PW" label-en="Palau" label-fr="Palaos" />
-			<country code="PY" label-en="Paraguay" label-fr="Paraguay" />
-			<country code="QA" label-en="Qatar" label-fr="Qatar" />
-			<country code="RE" label-en="Reunion" label-fr="Réunion" />
-			<country code="RO" label-en="Romania" label-fr="Roumanie" />
-			<country code="RU" label-en="Russian Federation" label-fr="Russie" />
-			<country code="RW" label-en="Rwanda" label-fr="Rwanda" />
-			<country code="SA" label-en="Saudi Arabia" label-fr="Arabie saoudite" />
-			<country code="SB" label-en="Solomon Islands" label-fr="Îles Salomon" />
-			<country code="SC" label-en="Seychelles" label-fr="Seychelles" />
-			<country code="SD" label-en="Sudan" label-fr="Soudan" />
-			<country code="SE" label-en="Sweden" label-fr="Suède" />
-			<country code="SG" label-en="Singapore" label-fr="Singapour" />
-			<country code="SH" label-en="Saint Helena" label-fr="Sainte-Hélène" />
-			<country code="SI" label-en="Slovenia" label-fr="Slovénie" />
-			<country code="SJ" label-en="Svalbard and Jan Mayen" label-fr="Svalbard et île Jan Mayen" />
-			<country code="SK" label-en="Slovakia" label-fr="Slovaquie" />
-			<country code="SL" label-en="Sierra Leone" label-fr="Sierra Leone" />
-			<country code="SM" label-en="San Marino" label-fr="Saint-Marin" />
-			<country code="SN" label-en="Senegal" label-fr="Sénégal" />
-			<country code="SO" label-en="Somalia" label-fr="Somalie" />
-			<country code="SR" label-en="Suriname" label-fr="Suriname" />
-			<country code="ST" label-en="Sao Tome and Principe" label-fr="São Tomé-et-Principe" />
-			<country code="SV" label-en="El Salvador" label-fr="Salvador" />
-			<country code="SY" label-en="Syrian Arab Republic" label-fr="Syrie" />
-			<country code="SZ" label-en="Swaziland" label-fr="Swaziland" />
-			<country code="TC" label-en="Turks and Caicos Islands" label-fr="Îles Turques et Caïques" />
-			<country code="TD" label-en="Chad" label-fr="Tchad" />
-			<country code="TF" label-en="French Southern Territories" label-fr="Terres australes et antarctiques françaises" />
-			<country code="TG" label-en="Togo" label-fr="Togo" />
-			<country code="TH" label-en="Thailand" label-fr="Thaïlande" />
-			<country code="TJ" label-en="Tajikistan" label-fr="Tadjikistan" />
-			<country code="TK" label-en="Tokelau" label-fr="Tokelau" />
-			<country code="TL" label-en="East Timor" label-fr="Timor oriental" />
-			<country code="TM" label-en="Turkmenistan" label-fr="Turkménistan" />
-			<country code="TN" label-en="Tunisia" label-fr="Tunisie" />
-			<country code="TO" label-en="Tonga" label-fr="Tonga" />
-			<country code="TR" label-en="Turkey" label-fr="Turquie" />
-			<country code="TT" label-en="Trinidad and Tobago" label-fr="Trinité-et-Tobago" />
-			<country code="TV" label-en="Tuvalu" label-fr="Tuvalu" />
-			<country code="TW" label-en="Taiwan" label-fr="Taïwan" />
-			<country code="TZ" label-en="Tanzania, United Republic of" label-fr="Tanzanie" />
-			<country code="UA" label-en="Ukraine" label-fr="Ukraine" />
-			<country code="UG" label-en="Uganda" label-fr="Ouganda" />
-			<country code="UM" label-en="United States Minor Outlying Islands" label-fr="Îles mineures éloignées des États-Unis" />
-			<country code="US" label-en="United States" label-fr="États-Unis" />
-			<country code="UY" label-en="Uruguay" label-fr="Uruguay" />
-			<country code="UZ" label-en="Uzbekistan" label-fr="Ouzbékistan" />
-			<country code="VA" label-en="Holy See (Vatican City State)" label-fr="Vatican" />
-			<country code="VC" label-en="Saint Vincent and the Grenadines" label-fr="Saint-Vincent-et-les Grenadines" />
-			<country code="VE" label-en="Venezuela" label-fr="Venezuela" />
-			<country code="VG" label-en="Virgin Islands, British" label-fr="Îles Vierges britanniques" />
-			<country code="VI" label-en="Virgin Islands, U.S." label-fr="Îles Vierges américaines" />
-			<country code="VN" label-en="Vietnam" label-fr="Viêt Nam" />
-			<country code="VU" label-en="Vanuatu" label-fr="Vanuatu" />
-			<country code="WF" label-en="Wallis and Futuna" label-fr="Wallis-et-Futuna" />
-			<country code="WS" label-en="Samoa" label-fr="Samoa" />
-			<country code="YE" label-en="Yemen" label-fr="Yémen" />
-			<country code="YT" label-en="Mayotte" label-fr="Mayotte" />
-			<country code="ZA" label-en="South Africa" label-fr="Afrique du Sud" />
-			<country code="ZM" label-en="Zambia" label-fr="Zambie" />
-			<country code="ZR" label-en="Zaire" label-fr="Zaire" />
-			<country code="ZW" label-en="Zimbabwe" label-fr="Zimbabwe" />
+		<folder byLabel="Département français">
+			<department id="FR-01" code="01" label="Ain" />
+			<department id="FR-02" code="02" label="Aisne" />
+			<department id="FR-03" code="03" label="Allier" />
+			<department id="FR-04" code="04" label="Alpes-de-Haute-Provence" />
+			<department id="FR-05" code="05" label="Hautes-Alpes" />
+			<department id="FR-06" code="06" label="Alpes-Maritimes" />
+			<department id="FR-07" code="07" label="Ardèche" />
+			<department id="FR-08" code="08" label="Ardennes" />
+			<department id="FR-09" code="09" label="Ariège" />
+			<department id="FR-10" code="10" label="Aube" />
+			<department id="FR-11" code="11" label="Aude" />
+			<department id="FR-12" code="12" label="Aveyron" />
+			<department id="FR-13" code="13" label="Bouches-du-Rhône" />
+			<department id="FR-14" code="14" label="Calvados" />
+			<department id="FR-15" code="15" label="Cantal" />
+			<department id="FR-16" code="16" label="Charente" />
+			<department id="FR-17" code="17" label="Charente-Maritime" />
+			<department id="FR-18" code="18" label="Cher" />
+			<department id="FR-19" code="19" label="Corrèze" />	
+			<department id="FR-2A" code="2A" label="Corse-du-Sud" />
+			<department id="FR-2B" code="2B" label="Haute-Corse" />
+			<department id="FR-21" code="21" label="Côte-d'Or" />
+			<department id="FR-22" code="22" label="Côtes-d'Armor" />
+			<department id="FR-23" code="23" label="Creuse" />
+			<department id="FR-24" code="24" label="Dordogne" />
+			<department id="FR-25" code="25" label="Doubs" />
+			<department id="FR-26" code="26" label="Drôme" />
+			<department id="FR-27" code="27" label="Eure" />
+			<department id="FR-28" code="28" label="Eure-et-Loir" />
+			<department id="FR-29" code="29" label="Finistère" />
+			<department id="FR-30" code="30" label="Gard" />
+			<department id="FR-31" code="31" label="Haute-Garonne" />
+			<department id="FR-32" code="32" label="Gers" />
+			<department id="FR-33" code="33" label="Gironde" />
+			<department id="FR-34" code="34" label="Hérault" />
+			<department id="FR-35" code="35" label="Ille-et-Vilaine" />
+			<department id="FR-36" code="36" label="Indre" />
+			<department id="FR-37" code="37" label="Indre-et-Loire" />
+			<department id="FR-38" code="38" label="Isère" />
+			<department id="FR-39" code="39" label="Jura" />
+			<department id="FR-40" code="40" label="Landes" />
+			<department id="FR-41" code="41" label="Loir-et-Cher" />
+			<department id="FR-42" code="42" label="Loire" />
+			<department id="FR-43" code="43" label="Haute-Loire" />
+			<department id="FR-44" code="44" label="Loire-Atlantique" />
+			<department id="FR-45" code="45" label="Loiret" />
+			<department id="FR-46" code="46" label="Lot" />
+			<department id="FR-47" code="47" label="Lot-et-Garonne" />
+			<department id="FR-48" code="48" label="Lozère" />
+			<department id="FR-49" code="49" label="Maine-et-Loire" />
+			<department id="FR-50" code="50" label="Manche" />
+			<department id="FR-51" code="51" label="Marne" />
+			<department id="FR-52" code="52" label="Haute-Marne" />
+			<department id="FR-53" code="53" label="Mayenne" />
+			<department id="FR-54" code="54" label="Meurthe-et-Moselle" />
+			<department id="FR-55" code="55" label="Meuse" />
+			<department id="FR-56" code="56" label="Morbihan" />
+			<department id="FR-57" code="57" label="Moselle" />
+			<department id="FR-58" code="58" label="Nièvre" />
+			<department id="FR-59" code="59" label="Nord" />
+			<department id="FR-60" code="60" label="Oise" />
+			<department id="FR-61" code="61" label="Orne" />
+			<department id="FR-62" code="62" label="Pas-de-Calais" />
+			<department id="FR-63" code="63" label="Puy-de-Dôme" />
+			<department id="FR-64" code="64" label="Pyrénées-Atlantiques" />
+			<department id="FR-65" code="65" label="Hautes-Pyrénées" />
+			<department id="FR-66" code="66" label="Pyrénées-Orientales" />
+			<department id="FR-67" code="67" label="Bas-Rhin" />
+			<department id="FR-68" code="68" label="Haut-Rhin" />
+			<department id="FR-69" code="69" label="Rhône" />
+			<department id="FR-70" code="70" label="Haute-Saône" />
+			<department id="FR-71" code="71" label="Saône-et-Loire" />
+			<department id="FR-72" code="72" label="Sarthe" />
+			<department id="FR-73" code="73" label="Savoie" />
+			<department id="FR-74" code="74" label="Haute-Savoie" />
+			<department id="FR-75" code="75" label="Paris" />
+			<department id="FR-76" code="76" label="Seine-Maritime" />
+			<department id="FR-77" code="77" label="Seine-et-Marne" />
+			<department id="FR-78" code="78" label="Yvelines" />
+			<department id="FR-79" code="79" label="Deux-Sèvres" />
+			<department id="FR-80" code="80" label="Somme" />
+			<department id="FR-81" code="81" label="Tarn" />
+			<department id="FR-82" code="82" label="Tarn-et-Garonne" />
+			<department id="FR-83" code="83" label="Var" />
+			<department id="FR-84" code="84" label="Vaucluse" />
+			<department id="FR-85" code="85" label="Vendée" />
+			<department id="FR-86" code="86" label="Vienne" />
+			<department id="FR-87" code="87" label="Haute-Vienne" />
+			<department id="FR-88" code="88" label="Vosges" />
+			<department id="FR-89" code="89" label="Yonne" />
+			<department id="FR-90" code="90" label="Territoire de Belfort" />
+			<department id="FR-91" code="91" label="Essonne" />
+			<department id="FR-92" code="92" label="Hauts-de-Seine" />
+			<department id="FR-93" code="93" label="Seine-Saint-Denis" />
+			<department id="FR-94" code="94" label="Val-de-Marne" />
+			<department id="FR-95" code="95" label="Val-d'Oise" />
+			<department id="FR-971" code="971" label="Guadeloupe" />
+			<department id="FR-972" code="972" label="Martinique" />
+			<department id="FR-973" code="973" label="Guyane" />
+			<department id="FR-974" code="974" label="La Réunion" />			
 		</folder>
-		<zone code="FR" label="France" country-refid="FR">
-			<tag name="default_zone" />
-		</zone>
+		
+		<zone id="FR-20" code="20" label="Corse" subzone-refids="FR-2A,FR-2B"/>
+		
+		<folder byLabel="Pays">
+			<country code="AD" label="Andorra" />
+			<country code="AE" label="United Arab Emirates" />
+			<country code="AF" label="Afghanistan" />
+			<country code="AG" label="Antigua and Barbuda" />
+			<country code="AI" label="Anguilla" />
+			<country code="AL" label="Albania" />
+			<country code="AM" label="Armenia" />
+			<country code="AN" label="Netherlands Antilles" />
+			<country code="AO" label="Angola" />
+			<country code="AP" label="Asia/Pacific Region" />
+			<country code="AQ" label="Antarctica" />
+			<country code="AR" label="Argentina" />
+			<country code="AS" label="American Samoa" />
+			<country id="AT" code="AT" label="Austria" />
+			<country code="AU" label="Australia" />
+			<country code="AW" label="Aruba" />
+			<country code="AZ" label="Azerbaijan" />
+			<country code="BA" label="Bosnia and Herzegovina" />
+			<country code="BB" label="Barbados" />
+			<country code="BD" label="Bangladesh" />
+			<country id="BE" code="BE" label="Belgium" />
+			<country code="BF" label="Burkina Faso" />
+			<country code="BG" label="Bulgaria" />
+			<country code="BH" label="Bahrain" />
+			<country code="BI" label="Burundi" />
+			<country code="BJ" label="Benin" />
+			<country code="BM" label="Bermuda" />
+			<country code="BN" label="Brunei Darussalam" />
+			<country code="BO" label="Bolivia" />
+			<country code="BR" label="Brazil" />
+			<country code="BS" label="Bahamas" />
+			<country code="BT" label="Bhutan" />
+			<country code="BV" label="Bouvet Island" />
+			<country code="BW" label="Botswana" />
+			<country code="BY" label="Belarus" />
+			<country code="BZ" label="Belize" />
+			<country code="CA" label="Canada" />
+			<country code="CC" label="Cocos (Keeling) Islands" />
+			<country code="CD" label="Congo, The Democratic Republic of the" />
+			<country code="CF" label="Central African Republic" />
+			<country code="CG" label="Congo" />
+			<country code="CH" label="Switzerland" />
+			<country code="CI" label="Cote D'Ivoire" />
+			<country code="CK" label="Cook Islands" />
+			<country code="CL" label="Chile" />
+			<country code="CM" label="Cameroon" />
+			<country code="CN" label="China" />
+			<country code="CO" label="Colombia" />
+			<country code="CR" label="Costa Rica" />
+			<country code="CS" label="Serbia and Montenegro" />
+			<country code="CU" label="Cuba" />
+			<country code="CV" label="Cape Verde" />
+			<country code="CX" label="Christmas Island" />
+			<country id="CY" code="CY" label="Cyprus" />
+			<country code="CZ" label="Czech Republic" />
+			<country id="DE" code="DE" label="Germany" />
+			<country code="DJ" label="Djibouti" />
+			<country code="DK" label="Denmark" />
+			<country code="DM" label="Dominica" />
+			<country code="DO" label="Dominican Republic" />
+			<country code="DZ" label="Algeria" />
+			<country code="EC" label="Ecuador" />
+			<country code="EE" label="Estonia" />
+			<country code="EG" label="Egypt" />
+			<country code="EH" label="Western Sahara" />
+			<country code="ER" label="Eritrea" />
+			<country id="ES" code="ES" label="Spain" />
+			<country code="ET" label="Ethiopia" />
+			<country id="FI" code="FI" label="Finland" />
+			<country code="FJ" label="Fiji" />
+			<country code="FK" label="Falkland Islands (Malvinas)" />
+			<country code="FM" label="Micronesia, Federated States of" />
+			<country code="FO" label="Faroe Islands" />
+			<country id="FR" code="FR" label="France" subzone-refids="FR-01,FR-02,FR-03,FR-04,FR-05,FR-06,FR-07,FR-08,FR-09,FR-10,FR-11,FR-12,FR-13,FR-14,FR-15,FR-16,FR-17,FR-18,FR-19,FR-20,FR-2A,FR-2B,FR-21,FR-22,FR-23,FR-24,FR-25,FR-26,FR-27,FR-28,FR-29,FR-30,FR-31,FR-32,FR-33,FR-34,FR-35,FR-36,FR-37,FR-38,FR-39,FR-40,FR-41,FR-42,FR-43,FR-44,FR-45,FR-46,FR-47,FR-48,FR-49,FR-50,FR-51,FR-52,FR-53,FR-54,FR-55,FR-56,FR-57,FR-58,FR-59,FR-60,FR-61,FR-62,FR-63,FR-64,FR-65,FR-66,FR-67,FR-68,FR-69,FR-70,FR-71,FR-72,FR-73,FR-74,FR-75,FR-76,FR-77,FR-78,FR-79,FR-80,FR-81,FR-82,FR-83,FR-84,FR-85,FR-86,FR-87,FR-88,FR-89,FR-90,FR-91,FR-92,FR-93,FR-94,FR-95,FR-971,FR-972,FR-973,FR-974">
+				<tag name="default_zone" />
+			</country>
+			<country code="GA" label="Gabon" />
+			<country code="GB" label="United Kingdom" />
+			<country code="GD" label="Grenada" />
+			<country code="GE" label="Georgia" />
+			<country code="GF" label="French Guiana" />
+			<country code="GH" label="Ghana" />
+			<country code="GI" label="Gibraltar" />
+			<country code="GL" label="Greenland" />
+			<country code="GM" label="Gambia" />
+			<country code="GN" label="Guinea" />
+			<country code="GP" label="Guadeloupe" />
+			<country code="GQ" label="Equatorial Guinea" />
+			<country id="GR" code="GR" label="Greece" />
+			<country code="GS" label="South Georgia and the South Sandwich Islands" />
+			<country code="GT" label="Guatemala" />
+			<country code="GU" label="Guam" />
+			<country code="GW" label="Guinea-Bissau" />
+			<country code="GY" label="Guyana" />
+			<country code="HK" label="Hong Kong" />
+			<country code="HM" label="Heard Island and McDonald Islands" />
+			<country code="HN" label="Honduras" />
+			<country code="HR" label="Croatia" />
+			<country code="HT" label="Haiti" />
+			<country code="HU" label="Hungary" />
+			<country code="ID" label="Indonesia" />
+			<country id="IE" code="IE" label="Ireland" />
+			<country code="IL" label="Israel" />
+			<country code="IN" label="India" />
+			<country code="IO" label="British Indian Ocean Territory" />
+			<country code="IQ" label="Iraq" />
+			<country code="IR" label="Iran, Islamic Republic of" />
+			<country code="IS" label="Iceland" />
+			<country id="IT" code="IT" label="Italy" />
+			<country code="JM" label="Jamaica" />
+			<country code="JO" label="Jordan" />
+			<country code="JP" label="Japan" />
+			<country code="KE" label="Kenya" />
+			<country code="KG" label="Kyrgyzstan" />
+			<country code="KH" label="Cambodia" />
+			<country code="KI" label="Kiribati" />
+			<country code="KM" label="Comoros" />
+			<country code="KN" label="Saint Kitts and Nevis" />
+			<country code="KP" label="Korea, Democratic People's Republic of" />
+			<country code="KR" label="Korea, Republic of" />
+			<country code="KW" label="Kuwait" />
+			<country code="KY" label="Cayman Islands" />
+			<country code="KZ" label="Kazakhstan" />
+			<country code="LA" label="Lao People's Democratic Republic" />
+			<country code="LB" label="Lebanon" />
+			<country code="LC" label="Saint Lucia" />
+			<country code="LI" label="Liechtenstein" />
+			<country code="LK" label="Sri Lanka" />
+			<country code="LR" label="Liberia" />
+			<country code="LS" label="Lesotho" />
+			<country code="LT" label="Lithuania" />
+			<country id="LU" code="LU" label="Luxembourg" />
+			<country code="LV" label="Latvia" />
+			<country code="LY" label="Libyan Arab Jamahiriya" />
+			<country code="MA" label="Morocco" />
+			<country code="MC" label="Monaco" />
+			<country code="MD" label="Moldova, Republic of" />
+			<country code="MG" label="Madagascar" />
+			<country code="MH" label="Marshall Islands" />
+			<country code="MK" label="Macedonia" />
+			<country code="ML" label="Mali" />
+			<country code="MM" label="Myanmar" />
+			<country code="MN" label="Mongolia" />
+			<country code="MO" label="Macau" />
+			<country code="MP" label="Northern Mariana Islands" />
+			<country code="MQ" label="Martinique" />
+			<country code="MR" label="Mauritania" />
+			<country code="MS" label="Montserrat" />
+			<country id="MT" code="MT" label="Malta" />
+			<country code="MU" label="Mauritius" />
+			<country code="MV" label="Maldives" />
+			<country code="MW" label="Malawi" />
+			<country code="MX" label="Mexico" />
+			<country code="MY" label="Malaysia" />
+			<country code="MZ" label="Mozambique" />
+			<country code="NA" label="Namibia" />
+			<country code="NC" label="New Caledonia" />
+			<country code="NE" label="Niger" />
+			<country code="NF" label="Norfolk Island" />
+			<country code="NG" label="Nigeria" />
+			<country code="NI" label="Nicaragua" />
+			<country id="NL" code="NL" label="Netherlands" />
+			<country code="NO" label="Norway" />
+			<country code="NP" label="Nepal" />
+			<country code="NR" label="Nauru" />
+			<country code="NU" label="Niue" />
+			<country code="NZ" label="New Zealand" />
+			<country code="OM" label="Oman" />
+			<country code="PA" label="Panama" />
+			<country code="PE" label="Peru" />
+			<country code="PF" label="French Polynesia" />
+			<country code="PG" label="Papua New Guinea" />
+			<country code="PH" label="Philippines" />
+			<country code="PK" label="Pakistan" />
+			<country code="PL" label="Poland" />
+			<country code="PM" label="Saint Pierre and Miquelon" />
+			<country code="PN" label="Pitcairn" />
+			<country code="PR" label="Puerto Rico" />
+			<country code="PS" label="Palestinian Territory" />
+			<country id="PT" code="PT" label="Portugal" />
+			<country code="PW" label="Palau" />
+			<country code="PY" label="Paraguay" />
+			<country code="QA" label="Qatar" />
+			<country code="RE" label="Reunion" />
+			<country code="RO" label="Romania" />
+			<country code="RU" label="Russian Federation" />
+			<country code="RW" label="Rwanda" />
+			<country code="SA" label="Saudi Arabia" />
+			<country code="SB" label="Solomon Islands" />
+			<country code="SC" label="Seychelles" />
+			<country code="SD" label="Sudan" />
+			<country code="SE" label="Sweden" />
+			<country code="SG" label="Singapore" />
+			<country code="SH" label="Saint Helena" />
+			<country id="SI" code="SI" label="Slovenia" />
+			<country code="SJ" label="Svalbard and Jan Mayen" />
+			<country id="SK" code="SK" label="Slovakia" />
+			<country code="SL" label="Sierra Leone" />
+			<country code="SM" label="San Marino" />
+			<country code="SN" label="Senegal" />
+			<country code="SO" label="Somalia" />
+			<country code="SR" label="Suriname" />
+			<country code="ST" label="Sao Tome and Principe" />
+			<country code="SV" label="El Salvador" />
+			<country code="SY" label="Syrian Arab Republic" />
+			<country code="SZ" label="Swaziland" />
+			<country code="TC" label="Turks and Caicos Islands" />
+			<country code="TD" label="Chad" />
+			<country code="TF" label="French Southern Territories" />
+			<country code="TG" label="Togo" />
+			<country code="TH" label="Thailand" />
+			<country code="TJ" label="Tajikistan" />
+			<country code="TK" label="Tokelau" />
+			<country code="TL" label="East Timor" />
+			<country code="TM" label="Turkmenistan" />
+			<country code="TN" label="Tunisia" />
+			<country code="TO" label="Tonga" />
+			<country code="TR" label="Turkey" />
+			<country code="TT" label="Trinidad and Tobago" />
+			<country code="TV" label="Tuvalu" />
+			<country code="TW" label="Taiwan" />
+			<country code="TZ" label="Tanzania, United Republic of" />
+			<country code="UA" label="Ukraine" />
+			<country code="UG" label="Uganda" />
+			<country code="UM" label="United States Minor Outlying Islands" />
+			<country code="US" label="United States" />
+			<country code="UY" label="Uruguay" />
+			<country code="UZ" label="Uzbekistan" />
+			<country code="VA" label="Holy See (Vatican City State)" />
+			<country code="VC" label="Saint Vincent and the Grenadines" />
+			<country code="VE" label="Venezuela" />
+			<country code="VG" label="Virgin Islands, British" />
+			<country code="VI" label="Virgin Islands, U.S." />
+			<country code="VN" label="Vietnam" />
+			<country code="VU" label="Vanuatu" />
+			<country code="WF" label="Wallis and Futuna" />
+			<country code="WS" label="Samoa" />
+			<country code="YE" label="Yemen" />
+			<country code="YT" label="Mayotte" />
+			<country code="ZA" label="South Africa" />
+			<country code="ZM" label="Zambia" />
+			<country code="ZR" label="Zaire" />
+			<country code="ZW" label="Zimbabwe" />
+		</folder>
+		
+		<zone code="FR-DOM" label="France d'outre-mer" subzone-refids="FR-971,FR-972,FR-973,FR-974" />
+			
+		<zone id="FR-CONTINENTAL" code="FR-CONTINENTAL" label="France continental" subzone-refids="FR-01,FR-02,FR-03,FR-04,FR-05,FR-06,FR-07,FR-08,FR-09,FR-10,FR-11,FR-12,FR-13,FR-14,FR-15,FR-16,FR-17,FR-18,FR-19,FR-21,FR-22,FR-23,FR-24,FR-25,FR-26,FR-27,FR-28,FR-29,FR-30,FR-31,FR-32,FR-33,FR-34,FR-35,FR-36,FR-37,FR-38,FR-39,FR-40,FR-41,FR-42,FR-43,FR-44,FR-45,FR-46,FR-47,FR-48,FR-49,FR-50,FR-51,FR-52,FR-53,FR-54,FR-55,FR-56,FR-57,FR-58,FR-59,FR-60,FR-61,FR-62,FR-63,FR-64,FR-65,FR-66,FR-67,FR-68,FR-69,FR-70,FR-71,FR-72,FR-73,FR-74,FR-75,FR-76,FR-77,FR-78,FR-79,FR-80,FR-81,FR-82,FR-83,FR-84,FR-85,FR-86,FR-87,FR-88,FR-89,FR-90,FR-91,FR-92,FR-93,FR-94,FR-95" />
+			
+		<zone code="FX" label="France métropolitaine" subzone-refids="FR-CONTINENTAL,FR-20" />	
+			
+		<zone code="FR-ALL" label="France" subzone-refid="FR"/>
+		
+		<zone code="EURO" label="Zone EURO" subzone-refids="DE,AT,BE,ES,FI,FR,IE,IT,LU,NL,PT,GR,SI,CY,MT,SK"/>
+		
 	</rootfolder>
 </script>

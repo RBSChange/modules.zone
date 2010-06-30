@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization extend="modules.zone.document.zone">
+  <entity id="document-name">
+    <locale lang="fr">départment</locale>
+    <locale lang="en">department</locale>
+  </entity>
+</localization>

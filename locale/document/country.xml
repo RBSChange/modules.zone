@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<localization>
+<localization extend="modules.zone.document.zone">
 	<entity id="document-name">
 		<locale lang="fr">pays</locale>
-	</entity>
-
-	<entity id="edition-form-title">
-		<locale lang="fr">propriétés du pays</locale>
-	</entity>
-
-	<entity id="label">
-		<locale lang="fr">libellé</locale>
-	</entity>
-	<entity id="label-help">
-		<locale lang="fr">libellé</locale>
-	</entity>
-	<entity id="code">
-		<locale lang="fr">code</locale>
-	</entity>
-	<entity id="code-help">
-		<locale lang="fr">code iso</locale>
-	</entity>
-	<entity id="validatorClassName">
-		<locale lang="fr">validateur de code postal</locale>
-	</entity>
-	<entity id="validatorClassName-help">
-		<locale lang="fr">validateur de code postal</locale>
+		<locale lang="fr">country</locale>
 	</entity>
 </localization>

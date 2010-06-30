@@ -6,11 +6,11 @@ class zone_CountryScriptDocumentElement extends import_ScriptDocumentElement
      */
     protected function initPersistentDocument()
     {
-			$country = zone_CountryService::getInstance()->getByCode($this->attributes['code']);
-			if($country !== null)
-			{
-				return $country;
-			}
+		$country = zone_CountryService::getInstance()->getByCode($this->attributes['code']);
+		if($country !== null)
+		{
+			return $country;
+		}
     	return zone_CountryService::getInstance()->getNewDocumentInstance();
     }
 }

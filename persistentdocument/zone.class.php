@@ -1,41 +1,6 @@
 <?php
 class zone_persistentdocument_zone extends zone_persistentdocument_zonebase 
-{
-	public function hasZones($zonesIds)
-	{
-		$zs = zone_ZoneService::getInstance();
-		
-		return $zs->hasZones($this->getId(), $zonesIds);
-	}
-	
-	public function hasCountries($zoneCountryIds)
-	{
-		$zs = zone_ZoneService::getInstance();
-		
-		$zs->hasCountries($this->getId(), $zoneCountryIds);
-	}
-	
-	public function hasStates($zoneStateIds)
-	{
-		$zs = zone_ZoneService::getInstance();
-		
-		$zs->hasStates($this->getId(), $zoneStateIds);
-	}
-	
-	public function hasZips($zoneZipIds)
-	{
-		$zs = zone_ZoneService::getInstance();
-		
-		$zs->hasZips($this->getId(), $zoneZipIds);
-	}
-	
-	public function inZone($zoneContainerId)
-	{
-		$zs = zone_ZoneService::getInstance();
-		
-		$zs->inZone($this->getId(), $zoneContainerId);
-	}
-	
+{		
 	/**
 	 * @param string $moduleName
 	 * @param string $treeType
@@ -48,4 +13,26 @@ class zone_persistentdocument_zone extends zone_persistentdocument_zonebase
   	        $nodeAttributes['tags'] = 'default_zone';
    	    }
 	}
+	
+	/**
+	 * return string[]
+	 */
+	public function getCodes()
+	{
+		$result = array($this->getCode());
+		if ($this->getSubzoneCount())
+		{
+			foreach ($this->getSubzoneArray() as $subzone) 
+			{
+				$result = array_merge($result, $subzone->getCodes());
+			}
+		}
+		return $result;
+	}
+	
+	public final function isValidCode($code, $recursive = true)
+	{
+		return $this->getDocumentService()->isValidCode($this, $code, $recursive);
+	}
+	
 }

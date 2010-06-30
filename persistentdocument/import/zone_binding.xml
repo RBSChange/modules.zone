@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <script>
 	<binding fileName="modules/generic/persistentdocument/import/generic_binding.xml" />
-	<binding name="zone" className="zone_ZoneScriptDocumentElement" />	
+	<binding name="zone" className="zone_ZoneScriptDocumentElement" />
 	<binding name="country" className="zone_CountryScriptDocumentElement" />
+	<binding name="department" className="zone_DepartmentScriptDocumentElement" />
 </script>

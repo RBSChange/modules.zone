@@ -27,7 +27,7 @@ class zone_ListPublishedcountriesService extends BaseService
 		if($this->items === null)
 		{
 			$query = zone_CountryService::getInstance()->createQuery();
-			$query->add(Restrictions::published())->add(Restrictions::isNotEmpty('label'));
+			$query->add(Restrictions::published());
 			$countries = $query->find();
 
 			$ok = array();
@@ -35,14 +35,13 @@ class zone_ListPublishedcountriesService extends BaseService
 			{
 				$ok[$country->getLabel()] = $country->getId();
 			}
+			
 			ksort($ok, SORT_LOCALE_STRING);
-
 			$results = array();
 			foreach ($ok as $name => $id)
 			{
 				$results[$id] = new list_Item($name, $id);
 			}
-
 			$this->items = $results;
 		}
 		return $this->items;

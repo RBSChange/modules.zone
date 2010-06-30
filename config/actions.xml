@@ -1,11 +1,33 @@
 <?xml version="1.0"?>
 <actions extends="generic">
+	<action name="createFolder">
+		<parameter name="listWidget"/>
+		<body><![CDATA[
+			this.createDocumentEditor('modules_zone_folder', listWidget.getSelectedItems()[0].id);
+		]]></body>
+	</action>
+	
   <action name="createZone">
     <parameter name="listWidget"/>
     <body><![CDATA[
     	this.createDocumentEditor('modules_zone_zone', listWidget.getSelectedItems()[0].id);
 		]]></body>
   </action>
+  
+  <action name="createCountry">
+    <parameter name="listWidget"/>
+    <body><![CDATA[
+    	this.createDocumentEditor('modules_zone_country', listWidget.getSelectedItems()[0].id);
+		]]></body>
+  </action>
+  
+  <action name="createDepartment">
+    <parameter name="listWidget"/>
+    <body><![CDATA[
+    	this.createDocumentEditor('modules_zone_department', listWidget.getSelectedItems()[0].id);
+		]]></body>
+  </action>
+  
   <action name="setDefaultZone">
     <parameter name="listWidget"/>
     <body><![CDATA[

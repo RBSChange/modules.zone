@@ -1,5 +1,5 @@
 <?php
-class zone_CountryService extends f_persistentdocument_DocumentService
+class zone_CountryService extends zone_ZoneService
 {
 	/**
 	 * Singleton
@@ -35,6 +35,17 @@ class zone_CountryService extends f_persistentdocument_DocumentService
 	{
 		return $this->pp->createQuery('modules_zone/country');
 	}
+	
+	/**
+	 * Create a query based on 'modules_zone/country' model.
+	 * Only documents that are strictly instance of modules_zone/country
+	 * (not children) will be retrieved
+	 * @return f_persistentdocument_criteria_Query
+	 */
+	public function createStrictQuery()
+	{
+		return $this->pp->createQuery('modules_zone/country', false);
+	}
 
 	/**
 	 * @param String $code
@@ -42,7 +53,7 @@ class zone_CountryService extends f_persistentdocument_DocumentService
 	 */
 	public function getByCode($code)
 	{
-		return $this->createQuery()->add(Restrictions::eq('code', $code))->findUnique();
+		return $this->createStrictQuery()->add(Restrictions::eq('code', $code))->findUnique();
 	}
 	
 	/**
@@ -53,19 +64,40 @@ class zone_CountryService extends f_persistentdocument_DocumentService
 	public function isZipCodeValid($countryId, $zipCode)
 	{
 	    $isValid = true;
-	    
 		$country = ($countryId > 0) ? DocumentHelper::getDocumentInstance($countryId) : null;
-	    if (!is_null($country))
+	    if ($country instanceof zone_persistentdocument_zone && $country->getSubzoneCount())
 	    {
-	        $validatorClassName = $country->getValidatorClassName();
-	        if (!is_null($validatorClassName))
-	        {
-                $validator = f_util_ClassUtils::callMethod($validatorClassName, 'getInstance');
-                $isValid = $validator->isValid($zipCode);
-	        }
+	        $isValid = $country->getDocumentService()->isValidCode($country, $zipCode);
 	    }
-
 	    return $isValid;
 	}
 	
+	/**
+	 * @param zone_persistentdocument_zone $zone
+	 * @param boolean $publishedOnly
+	 * @return zone_persistentdocument_country []
+	 */
+	public function getCountries($zone, $publishedOnly = true)
+	{
+		$result = array();
+		if ($zone instanceof zone_persistentdocument_country) 
+		{
+			if (!$publishedOnly || ($publishedOnly && $zone->isPublished()))
+			{
+				$result[] = $zone;
+			}
+		}
+		else if ($zone->getSubzoneCount() > 0)
+		{
+			foreach ($zone->getSubzoneArray() as $subzone) 
+			{
+
+				foreach ($this->getCountries($subzone) as $country)
+				{
+					$result[] = $country;
+				}
+			}
+		}
+		return $result;
+	}
 }

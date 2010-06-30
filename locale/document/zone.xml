@@ -21,11 +21,11 @@
 		<locale lang="fr">code de la zone</locale>
 	</entity>
 
-	<entity id="country">
-		<locale lang="fr">pays</locale>
+	<entity id="subzone">
+		<locale lang="fr">sous zones</locale>
 	</entity>
-	<entity id="country-help">
-		<locale lang="fr">pays</locale>
+	<entity id="subzone-help">
+		<locale lang="fr">sub zones</locale>
 	</entity>
 
 	<entity id="description">

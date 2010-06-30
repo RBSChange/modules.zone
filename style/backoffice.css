@@ -7,3 +7,6 @@ treechildren::-moz-tree-image(modules_zone_zone default_zone){
 treechildren::-moz-tree-image(modules_zone_country){
 	list-style-image: url(/changeicons/small/country.png) ;
 }
+treechildren::-moz-tree-image(modules_zone_department){
+	list-style-image: url(/changeicons/small/country.png);
+}
