@@ -46,6 +46,9 @@ class zone_patch_0300 extends patch_BasePatch
 				$sql = "ALTER TABLE `m_zone_doc_zone` DROP `country`";
 				$this->executeSQLQuery($sql);
 				
+				$sql = "update m_zone_doc_zone set code = 'FR-ALL' WHERE code='FR' AND document_model='modules_zone/zone'"; 
+				$this->executeSQLQuery($sql);
+				
 				$sql="insert into m_zone_doc_zone (document_id, document_model, document_author, document_authorid, document_creationdate, document_modificationdate, document_publicationstatus, document_lang, document_modelversion,document_version,document_startpublicationdate, document_endpublicationdate,document_metas,document_label,code,description) SELECT document_id, document_model, document_author, document_authorid, document_creationdate, document_modificationdate, document_publicationstatus, document_lang, document_modelversion,document_version,document_startpublicationdate, document_endpublicationdate,document_metas,document_label,code,null FROM m_zone_doc_country";
 				$this->executeSQLQuery($sql);
 				
