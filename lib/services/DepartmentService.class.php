@@ -61,6 +61,34 @@ class zone_DepartmentService extends zone_ZoneService
 		return $this->createStrictQuery()->add(Restrictions::eq('code', $code))->findUnique();
 	}
 	
+ 	/**
+	 * @param zone_persistentdocument_zone $zone
+	 * @param boolean $publishedOnly
+	 * @return zone_persistentdocument_department[]
+	 */
+	public function getDepartments($zone, $publishedOnly = true)
+	{
+		$result = array();
+		if ($zone instanceof zone_persistentdocument_department) 
+		{
+			if (!$publishedOnly || ($publishedOnly && $zone->isPublished()))
+			{
+				$result[] = $zone;
+			}
+		}
+		else if ($zone->getSubzoneCount() > 0)
+		{
+			foreach ($zone->getSubzoneArray() as $subzone) 
+			{
+				foreach ($this->getDepartments($subzone, $publishedOnly) as $department)
+				{
+					$result[] = $department;
+				}
+			}
+		}
+		return $result;
+	}
+
 	/**
 	 * @param zone_persistentdocument_department $document
 	 * @param Integer $parentNodeId Parent node ID where to save the document (optionnal => can be null !).

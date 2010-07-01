@@ -75,7 +75,7 @@ class zone_CountryService extends zone_ZoneService
 	/**
 	 * @param zone_persistentdocument_zone $zone
 	 * @param boolean $publishedOnly
-	 * @return zone_persistentdocument_country []
+	 * @return zone_persistentdocument_country[]
 	 */
 	public function getCountries($zone, $publishedOnly = true)
 	{
@@ -92,7 +92,7 @@ class zone_CountryService extends zone_ZoneService
 			foreach ($zone->getSubzoneArray() as $subzone) 
 			{
 
-				foreach ($this->getCountries($subzone) as $country)
+				foreach ($this->getCountries($subzone, $publishedOnly) as $country)
 				{
 					$result[] = $country;
 				}
