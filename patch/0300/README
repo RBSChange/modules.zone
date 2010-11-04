@@ -1,9 +1,0 @@
-Version: 3.0.3
-
-- Ajout dés departement
-- Les documents country et department hérite de zone
-
-- Deplacement des données de la table country vers zone.
-- Les documents country ne sont plus localisé
-
-- Ajout des départements francais dans le script d'initialisation
