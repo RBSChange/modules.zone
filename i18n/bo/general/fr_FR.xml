@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.zone.bo.general" lcid="fr_FR">
+  <key id="module-name">zone</key>
+  <key id="tree-root-name">zone</key>
+  <key id="system-folder-name">zone</key>
+  <key id="countries">pays</key>
+  <key id="defaulttag">zone par défaut</key>
+</i18n>

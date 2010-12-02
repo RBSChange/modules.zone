@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<localization extend="modules.zone.document.zone">
-	<entity id="document-name">
-		<locale lang="fr">pays</locale>
-		<locale lang="fr">country</locale>
-	</entity>
-</localization>

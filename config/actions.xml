@@ -32,7 +32,7 @@
     <parameter name="listWidget"/>
     <body><![CDATA[
 		var ids = listWidget.getSelectedIds();
-		this.execute("AddTag", "AddTag", {cmpref: ids[0], tag: 'default_zone'});
+		this.executeJSON("AddTagJSON", {cmpref: ids[0], tag: 'default_zone'});
 		]]></body>
   </action>  
 </actions>

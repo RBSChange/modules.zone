@@ -24,4 +24,5 @@
   <actiondef modulename="zone" actionname="delete.department" label="modules.zone.bo.useractionlogger.delete-department"/>
   <actiondef modulename="zone" actionname="move.zone" label="modules.zone.bo.useractionlogger.move-zone"/>
   <actiondef modulename="zone" actionname="delete.folder" label="modules.zone.bo.useractionlogger.delete-folder"/>
+  <actiondef modulename="zone" actionname="addtag.country" label="m.zone.bo.useractionlogger.addtag-country"/>
 </script>

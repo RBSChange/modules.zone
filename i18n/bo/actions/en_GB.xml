@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.zone.bo.actions" lcid="en_GB">
+  <key id="create_">add</key>
+  <key id="createfolderzone_">add</key>
+  <key id="createzone">add zone</key>
+  <key id="createcountry">add country</key>
+  <key id="createdepartment">add department</key>
+  <key id="setdefault">default zone</key>
+</i18n>

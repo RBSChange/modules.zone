@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.zone.document.zone" lcid="fr_FR">
+  <key id="document-name">zone</key>
+  <key id="edition-form-title">propriétés de la zone</key>
+  <key id="label">libellé</key>
+  <key id="label-help">libellé de la zone</key>
+  <key id="code">code</key>
+  <key id="code-help">code de la zone</key>
+  <key id="subzone">sous zones</key>
+  <key id="subzone-help">sub zones</key>
+  <key id="description">description</key>
+  <key id="description-help">description</key>
+</i18n>
