@@ -9,54 +9,7 @@ class zone_ZoneService extends f_persistentdocument_DocumentService
 	 * @var zone_ZoneService
 	 */
 	private static $instance = null;
-	
-	/**
-	 * @see f_persistentdocument_DocumentService::preSave()
-	 *
-	 * @param zone_persistentdocument_zone $document
-	 * @param Integer $parentNodeId
-	 */
-	protected function preSave($document, $parentNodeId)
-	{
-		if ($document->isPropertyModified('subzone') && $document->getSubzoneCount())
-		{
-			$path = array($document->getId());
-			foreach ($document->getSubzoneArray() as $subdoc) 
-			{
-				if ($this->isInPath($subdoc, $path))
-				{
-					Framework::info('Recusivity on ' .$document->__toString() .' for '.  $subdoc->__toString());
-					$document->removeSubzone($subdoc);
-				}
-			}
-		}
-	}
-	
-	/**
-	 * @param zone_persistentdocument_zone $document
-	 * @param array $path
-	 * @return boolean
-	 */
-	private function isInPath($document, $path)
-	{
-		if (in_array($document->getId(), $path))
-		{
-			return true;
-		}
-		if ($document->getSubzoneCount())
-		{
-			$path[] = $document->getId();
-			foreach ($document->getSubzoneArray() as $subdoc) 
-			{
-				if ($this->isInPath($subdoc, $path))
-				{
-					return true;
-				}
-			}
-		}
-		return false;
-	}
-	
+
 	/**
 	 * @return zone_ZoneService
 	 */
@@ -98,10 +51,57 @@ class zone_ZoneService extends f_persistentdocument_DocumentService
 	}
 
 	/**
+	 * @see f_persistentdocument_DocumentService::preSave()
+	 *
+	 * @param zone_persistentdocument_zone $document
+	 * @param Integer $parentNodeId
+	 */
+	protected function preSave($document, $parentNodeId)
+	{
+		if ($document->isPropertyModified('subzone') && $document->getSubzoneCount())
+		{
+			$path = array($document->getId());
+			foreach ($document->getSubzoneArray() as $subdoc)
+			{
+				if ($this->isInPath($subdoc, $path))
+				{
+					Framework::info('Recusivity on ' .$document->__toString() .' for '.  $subdoc->__toString());
+					$document->removeSubzone($subdoc);
+				}
+			}
+		}
+	}
+
+	/**
+	 * @param zone_persistentdocument_zone $document
+	 * @param array $path
+	 * @return boolean
+	 */
+	private function isInPath($document, $path)
+	{
+		if (in_array($document->getId(), $path))
+		{
+			return true;
+		}
+		if ($document->getSubzoneCount())
+		{
+			$path[] = $document->getId();
+			foreach ($document->getSubzoneArray() as $subdoc)
+			{
+				if ($this->isInPath($subdoc, $path))
+				{
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+
+	/**
 	 * @var zone_persistentdocument_zone
 	 */
 	private $defaultZone;
-	
+
 	/**
 	 * @return zone_persistentdocument_zone
 	 */
@@ -115,14 +115,14 @@ class zone_ZoneService extends f_persistentdocument_DocumentService
 			}
 			catch (Exception $e)
 			{
-				Framework::warn(__METHOD__ . ' tag default_zone not setted, ' . $e->getMessage());
+				Framework::warn(__METHOD__ . ' tag default_zone not set, ' . $e->getMessage());
 				$result = $this->createQuery()->setMaxResults(1)->find();
 				if (count($result) == 1)
 				{
 					return $result[0];
 				}
 				return null;
-			}			
+			}
 		}
 		return $this->defaultZone;
 	}
@@ -144,7 +144,7 @@ class zone_ZoneService extends f_persistentdocument_DocumentService
 	{
 		return $this->createQuery()->add(Restrictions::eq("code", $code))->find();
 	}
-	
+
 	/**
 	 * @param zone_persistentdocument_country $country
 	 * @param zone_persistentdocument_zone $zone
@@ -158,7 +158,7 @@ class zone_ZoneService extends f_persistentdocument_DocumentService
 		$result = $query->findUnique();
 		return $result['countryCount'] > 0;
 	}
-		
+
 	/**
 	 * @param zone_persistentdocument_zone $zone
 	 * @param string $code
@@ -189,7 +189,7 @@ class zone_ZoneService extends f_persistentdocument_DocumentService
 		}
 		if ($recursive && $zone->getSubzoneCount())
 		{
-			foreach ($zone->getSubzoneArray() as $subzone) 
+			foreach ($zone->getSubzoneArray() as $subzone)
 			{
 				if ($subzone->getDocumentService()->hasMatchingCode($subzone, $code, $recursive))
 				{
