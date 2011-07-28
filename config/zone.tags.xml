@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
 <tags>
-   <tag label="&amp;modules.zone.bo.general.DefaultTag;" icon="zone">default_zone</tag>
+   <tag labeli18n="m.zone.bo.general.defaulttag" icon="zone">default_zone</tag>
 </tags>
