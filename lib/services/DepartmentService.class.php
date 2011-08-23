@@ -17,7 +17,7 @@ class zone_DepartmentService extends zone_ZoneService
 	{
 		if (self::$instance === null)
 		{
-			self::$instance = self::getServiceClassInstance(get_class());
+			self::$instance = new self();
 		}
 		return self::$instance;
 	}
