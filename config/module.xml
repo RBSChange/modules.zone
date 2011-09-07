@@ -3,6 +3,7 @@
 	<module>
 		<enabled>true</enabled>
 		<visible>true</visible>
+                <category>admin</category>
 		<icon>zone</icon>
 	</module>
 </config>
