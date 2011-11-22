@@ -2,8 +2,8 @@
 <i18n baseKey="m.zone.bo.actions" lcid="en_GB">
   <key id="create_">add</key>
   <key id="createfolderzone_">add</key>
-  <key id="createzone">add zone</key>
-  <key id="createcountry">add country</key>
-  <key id="createdepartment">add department</key>
-  <key id="setdefault">default zone</key>
+  <key id="createzone">add an area</key>
+  <key id="createcountry">add a country</key>
+  <key id="createdepartment">add a region</key>
+  <key id="setdefault">default area</key>
 </i18n>

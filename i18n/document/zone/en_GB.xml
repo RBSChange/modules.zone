@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <i18n baseKey="m.zone.document.zone" lcid="en_GB">
-  <key id="edition-form-title">zone properties</key>
+  <key id="edition-form-title">area's properties</key>
+  <key id="code">code</key>
+  <key id="code-help">area code</key>
+  <key id="description">description</key>
+  <key id="description-help">description</key>
+  <key id="document-name">area</key>
+  <key id="label">label</key>
+  <key id="label-help">area label</key>
+  <key id="subzone">sub areas</key>
+  <key id="subzone-help">sub areas</key>
 </i18n>
