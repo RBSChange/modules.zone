@@ -1,37 +1,37 @@
 <?xml version="1.0"?>
 <rights>
-  <actions>
-    <document name="rootfolder"/>
-    <document name="folder"/>
-    <document name="zone"/>
-    <document name="country"/>
-    <document name="department"/>
-  </actions>
-  <roles>
-    <role name="Admin">
-      <permission name="*"/>
-      <permission name="LoadPermissions.*"/>
-      <permission name="SavePermissions.*"/>
-      <permission name="GetPreferencesDocument"/>
-    </role>
-    <role name="Writer" extend="User">
-      <permission name="Delete.*"/>
-      <permission name="Load.*"/>
-      <permission name="LoadForTranslation.*"/>
-      <permission name="UpdateTranslation.*"/>
-      <permission name="Save.*"/>
-      <permission name="Insert.*"/>
-      <permission name="Update.*"/>
-      <permission name="Activate.*"/>
-      <permission name="Cancel.*"/>
-      <permission name="Deactivated.*"/>
-      <permission name="ReActivate.*"/>
-      <permission name="Order"/>
-      <permission name="LoadTags"/>
-    </role>
-    <role name="User">
-      <permission name="Enabled"/>
-      <permission name="List.*"/>
-    </role>
-  </roles>
+	<actions>
+		<document name="rootfolder" />
+		<document name="folder" />
+		<document name="zone" />
+		<document name="country" />
+		<document name="department" />
+	</actions>
+	<roles>
+		<role name="Admin">
+			<permission name="*" />
+			<permission name="LoadPermissions.*" />
+			<permission name="SavePermissions.*" />
+			<permission name="GetPreferencesDocument" />
+		</role>
+		<role name="Writer" extend="User">
+			<permission name="Delete.*" />
+			<permission name="Load.*" />
+			<permission name="LoadForTranslation.*" />
+			<permission name="UpdateTranslation.*" />
+			<permission name="Save.*" />
+			<permission name="Insert.*" />
+			<permission name="Update.*" />
+			<permission name="Activate.*" />
+			<permission name="Cancel.*" />
+			<permission name="Deactivated.*" />
+			<permission name="ReActivate.*" />
+			<permission name="Order" />
+			<permission name="LoadTags" />
+		</role>
+		<role name="User">
+			<permission name="Enabled" />
+			<permission name="List.*" />
+		</role>
+	</roles>
 </rights>

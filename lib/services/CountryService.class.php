@@ -1,24 +1,9 @@
 <?php
+/**
+ * @method zone_CountryService getInstance()
+ */
 class zone_CountryService extends zone_ZoneService
 {
-	/**
-	 * Singleton
-	 * @var zone_CountryService
-	 */
-	private static $instance = null;
-
-	/**
-	 * @return zone_CountryService
-	 */
-	public static function getInstance()
-	{
-		if (is_null(self::$instance))
-		{
-			self::$instance = new self();
-		}
-		return self::$instance;
-	}
-
 	/**
 	 * @return zone_persistentdocument_country
 	 */
@@ -33,7 +18,7 @@ class zone_CountryService extends zone_ZoneService
 	 */
 	public function createQuery()
 	{
-		return $this->pp->createQuery('modules_zone/country');
+		return $this->getPersistentProvider()->createQuery('modules_zone/country');
 	}
 	
 	/**
@@ -44,11 +29,11 @@ class zone_CountryService extends zone_ZoneService
 	 */
 	public function createStrictQuery()
 	{
-		return $this->pp->createQuery('modules_zone/country', false);
+		return $this->getPersistentProvider()->createQuery('modules_zone/country', false);
 	}
 
 	/**
-	 * @param String $code
+	 * @param string $code
 	 * @return zone_persistentdocument_country
 	 */
 	public function getByCode($code)
@@ -57,9 +42,9 @@ class zone_CountryService extends zone_ZoneService
 	}
 	
 	/**
-	 * @param Integer $countryId
-	 * @param String $zipCode
-	 * @return Boolean
+	 * @param integer $countryId
+	 * @param string $zipCode
+	 * @return boolean
 	 */
 	public function isZipCodeValid($countryId, $zipCode)
 	{

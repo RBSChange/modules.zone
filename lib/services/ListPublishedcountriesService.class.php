@@ -1,26 +1,17 @@
 <?php
-class zone_ListPublishedcountriesService extends change_BaseService
+/**
+ * @package modules.zone
+ * @method zone_ListPublishedcountriesService getInstance()
+ */
+class zone_ListPublishedcountriesService extends change_BaseService implements list_ListItemsService
 {
 	/**
-	 * @var customer_ListTitleService
+	 * @var list_Item[]
 	 */
-	private static $instance;
 	private $items = null;
 
 	/**
-	 * @return customer_ListTitleService
-	 */
-	public static function getInstance()
-	{
-		if (is_null(self::$instance))
-		{
-			self::$instance = new self();
-		}
-		return self::$instance;
-	}
-
-	/**
-	 * @return array<list_Item>
+	 * @return list_Item[]
 	 */
 	public final function getItems()
 	{
@@ -48,7 +39,7 @@ class zone_ListPublishedcountriesService extends change_BaseService
 	}
 
 	/**
-	 * @return String
+	 * @return string
 	 */
 	public final function getDefaultId()
 	{

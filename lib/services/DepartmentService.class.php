@@ -1,27 +1,10 @@
 <?php
 /**
- * zone_DepartmentService
  * @package modules.zone
+ * @method zone_DepartmentService getInstance()
  */
 class zone_DepartmentService extends zone_ZoneService
 {
-	/**
-	 * @var zone_DepartmentService
-	 */
-	private static $instance;
-
-	/**
-	 * @return zone_DepartmentService
-	 */
-	public static function getInstance()
-	{
-		if (self::$instance === null)
-		{
-			self::$instance = new self();
-		}
-		return self::$instance;
-	}
-
 	/**
 	 * @return zone_persistentdocument_department
 	 */
@@ -38,7 +21,7 @@ class zone_DepartmentService extends zone_ZoneService
 	 */
 	public function createQuery()
 	{
-		return $this->pp->createQuery('modules_zone/department');
+		return $this->getPersistentProvider()->createQuery('modules_zone/department');
 	}
 	
 	/**
@@ -49,11 +32,11 @@ class zone_DepartmentService extends zone_ZoneService
 	 */
 	public function createStrictQuery()
 	{
-		return $this->pp->createQuery('modules_zone/department', false);
+		return $this->getPersistentProvider()->createQuery('modules_zone/department', false);
 	}
 	
 	/**
-	 * @param String $code
+	 * @param string $code
 	 * @return zone_persistentdocument_department
 	 */
 	public function getByCode($code)

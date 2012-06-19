@@ -1,27 +1,10 @@
 <?php
 /**
  * @package modules.zone
+ * @method zone_ZoneService getInstance()
  */
 class zone_ZoneService extends f_persistentdocument_DocumentService
 {
-	/**
-	 * Singleton
-	 * @var zone_ZoneService
-	 */
-	private static $instance = null;
-
-	/**
-	 * @return zone_ZoneService
-	 */
-	public static function getInstance()
-	{
-		if (is_null(self::$instance))
-		{
-			self::$instance = new self();
-		}
-		return self::$instance;
-	}
-
 	/**
 	 * @return zone_persistentdocument_zone
 	 */
@@ -36,7 +19,7 @@ class zone_ZoneService extends f_persistentdocument_DocumentService
 	 */
 	public function createQuery()
 	{
-		return $this->pp->createQuery('modules_zone/zone');
+		return $this->getPersistentProvider()->createQuery('modules_zone/zone');
 	}
 
 	/**
@@ -47,14 +30,14 @@ class zone_ZoneService extends f_persistentdocument_DocumentService
 	 */
 	public function createStrictQuery()
 	{
-		return $this->pp->createQuery('modules_zone/zone', false);
+		return $this->getPersistentProvider()->createQuery('modules_zone/zone', false);
 	}
 
 	/**
 	 * @see f_persistentdocument_DocumentService::preSave()
 	 *
 	 * @param zone_persistentdocument_zone $document
-	 * @param Integer $parentNodeId
+	 * @param integer $parentNodeId
 	 */
 	protected function preSave($document, $parentNodeId)
 	{
@@ -65,7 +48,10 @@ class zone_ZoneService extends f_persistentdocument_DocumentService
 			{
 				if ($this->isInPath($subdoc, $path))
 				{
-					Framework::info('Recusivity on ' .$document->__toString() .' for '.  $subdoc->__toString());
+					if (Framework::isInfoEnabled())
+					{
+						Framework::info('Recusivity on ' .$document->__toString() .' for '.  $subdoc->__toString());
+					}
 					$document->removeSubzone($subdoc);
 				}
 			}
@@ -98,11 +84,13 @@ class zone_ZoneService extends f_persistentdocument_DocumentService
 	}
 
 	/**
+	 * @deprecated
 	 * @var zone_persistentdocument_zone
 	 */
 	private $defaultZone;
 
 	/**
+	 * @deprecated
 	 * @return zone_persistentdocument_zone
 	 */
 	public function getDefaultZone()
@@ -128,6 +116,7 @@ class zone_ZoneService extends f_persistentdocument_DocumentService
 	}
 
 	/**
+	 * @deprecated
 	 * @return integer zoneId
 	 */
 	public function getDefaultZoneId()
@@ -148,7 +137,7 @@ class zone_ZoneService extends f_persistentdocument_DocumentService
 	/**
 	 * @param zone_persistentdocument_country $country
 	 * @param zone_persistentdocument_zone $zone
-	 * @return Boolean
+	 * @return boolean
 	 */
 	public function isCountryInZone($country, $zone)
 	{

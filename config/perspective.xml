@@ -4,25 +4,24 @@
 		<model name="modules_generic/rootfolder">
 			<children>
 				<child model="modules_generic/folder" />
-				<child model="modules_zone/zone" />  	
+				<child model="modules_zone/zone" />
 			</children>
 			<drops>
-				<drop model="modules_zone/zone" action="move"/>
-				<drop model="modules_zone/folder" action="move"/>
+				<drop model="modules_zone/zone" action="move" />
+				<drop model="modules_zone/folder" action="move" />
 			</drops>
 			<columns>
 				<column name="code" flex="2" />
 			</columns>
 			<contextactions>
-				<contextaction name="edit"/>
+				<contextaction name="edit" />
 				<groupactions name="create_">
-					<contextaction name="createZone"/>
-					<contextaction name="createFolder"/>
+					<contextaction name="createZone" />
+					<contextaction name="createFolder" />
 				</groupactions>
-				<contextaction name="openTreeNodeOrder"/>
+				<contextaction name="openTreeNodeOrder" />
 			</contextactions>
 		</model>
-		
 		<model name="modules_generic/folder">
 			<children>
 				<child model="modules_generic/folder" />
@@ -31,70 +30,64 @@
 				<child model="modules_zone/department" />
 			</children>
 			<drops>
-				<drop model="modules_zone/zone" action="move"/>
-				<drop model="modules_zone/folder" action="move"/>
-				<drop model="modules_zone/country" action="move"/>
-				<drop model="modules_zone/department" action="move"/>
+				<drop model="modules_zone/zone" action="move" />
+				<drop model="modules_zone/folder" action="move" />
+				<drop model="modules_zone/country" action="move" />
+				<drop model="modules_zone/department" action="move" />
 			</drops>
 			<columns>
 				<column name="code" flex="2" />
 			</columns>
 			<contextactions>
-				<contextaction name="edit"/>
-				<contextaction name="delete"/>
-				<contextaction name="openFolder"/>
-				<contextaction name="openTreeNodeOrder"/>
-				
+				<contextaction name="edit" />
+				<contextaction name="delete" />
+				<contextaction name="openFolder" />
+				<contextaction name="openTreeNodeOrder" />
 				<groupactions name="createfolderzone_">
-					<contextaction name="createZone"/>
-					<contextaction name="createCountry"/>
-					<contextaction name="createDepartment"/>
+					<contextaction name="createZone" />
+					<contextaction name="createCountry" />
+					<contextaction name="createDepartment" />
 				</groupactions>
-						
 			</contextactions>
 		</model>
-		
 		<model name="modules_zone/zone">
 			<contextactions>
-				<contextaction name="edit"/>
-				<contextaction name="delete"/>
-				<contextaction name="setDefaultZone"/>
+				<contextaction name="edit" />
+				<contextaction name="delete" />
+				<contextaction name="setDefaultZone" />
 			</contextactions>
 		</model>
-				
 		<model name="modules_zone/country">
 			<contextactions>
-				<contextaction name="edit"/>
-				<contextaction name="delete"/>
-				<contextaction name="setDefaultZone"/>
+				<contextaction name="edit" />
+				<contextaction name="delete" />
+				<contextaction name="setDefaultZone" />
 			</contextactions>
 		</model>
-		
 		<model name="modules_zone/department">
 			<contextactions>
-				<contextaction name="edit"/>
-				<contextaction name="delete"/>
+				<contextaction name="edit" />
+				<contextaction name="delete" />
 			</contextactions>
 		</model>
 	</models>
-	
 	<toolbar>
-		<toolbarbutton name="edit"/>
-		<toolbarbutton name="delete"/>
+		<toolbarbutton name="edit" />
+		<toolbarbutton name="delete" />
 	</toolbar>
 	<actions>
-		<action name="refresh" single="true" icon="refresh" labeli18n="m.uixul.bo.actions.refresh"/>
-		<action name="delete" permission="Delete" icon="delete" labeli18n="m.uixul.bo.actions.delete"/>
-		<action name="edit" single="true" permission="Load" icon="edit" labeli18n="m.uixul.bo.actions.edit"/>
-		<action name="setDefaultZone" single="true" permission="LoadTags" icon="environment_ok" labeli18n="m.zone.bo.actions.setdefault"/>
-		<action name="openTreeNodeOrder" single="true" permission="Order" icon="sort" labeli18n="m.uixul.bo.actions.set-children-order"/>
-		<action name="openFolder" single="true" icon="open-folder" labeli18n="m.uixul.bo.actions.openfolder"/>
+		<action name="refresh" single="true" icon="refresh" labeli18n="m.uixul.bo.actions.refresh" />
+		<action name="delete" permission="Delete" icon="delete" labeli18n="m.uixul.bo.actions.delete" />
+		<action name="edit" single="true" permission="Load" icon="edit" labeli18n="m.uixul.bo.actions.edit" />
+		<action name="setDefaultZone" single="true" permission="LoadTags" icon="environment_ok" labeli18n="m.zone.bo.actions.setdefault" />
+		<action name="openTreeNodeOrder" single="true" permission="Order" icon="sort" labeli18n="m.uixul.bo.actions.set-children-order" />
+		<action name="openFolder" single="true" icon="open-folder" labeli18n="m.uixul.bo.actions.openfolder" />
 		<action name="create_" single="true" icon="add" />
 		<action name="createfolderzone_" single="true" icon="add" />
-		<action name="createZone" single="true"  permission="Insert_zone" icon="add" labeli18n="m.zone.bo.actions.createzone"/>
-		<action name="createCountry" single="true"  permission="Insert_country" icon="add" labeli18n="m.zone.bo.actions.createcountry"/>
-		<action name="createDepartment" single="true"  permission="Insert_department" icon="add" labeli18n="m.zone.bo.actions.createdepartment"/>
-		<action name="createFolder" single="true" permission="Insert_folder" icon="create-folder" labeli18n="m.uixul.bo.actions.create-folder"/>
-		<action name="move" permission="Move" icon="up_down" labeli18n="m.uixul.bo.actions.move"/>
+		<action name="createZone" single="true" permission="Insert_zone" icon="add" labeli18n="m.zone.bo.actions.createzone" />
+		<action name="createCountry" single="true" permission="Insert_country" icon="add" labeli18n="m.zone.bo.actions.createcountry" />
+		<action name="createDepartment" single="true" permission="Insert_department" icon="add" labeli18n="m.zone.bo.actions.createdepartment" />
+		<action name="createFolder" single="true" permission="Insert_folder" icon="create-folder" labeli18n="m.uixul.bo.actions.create-folder" />
+		<action name="move" permission="Move" icon="up_down" labeli18n="m.uixul.bo.actions.move" />
 	</actions>
 </perspective>
