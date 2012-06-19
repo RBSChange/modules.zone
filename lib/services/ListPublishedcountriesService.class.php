@@ -1,5 +1,5 @@
 <?php
-class zone_ListPublishedcountriesService extends BaseService
+class zone_ListPublishedcountriesService extends change_BaseService
 {
 	/**
 	 * @var customer_ListTitleService
