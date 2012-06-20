@@ -6,7 +6,7 @@ class zone_Setup extends object_InitDataSetup
 		try
 		{
 			$scriptReader = import_ScriptReader::getInstance();
-       	 	$scriptReader->executeModuleScript('zone', 'init.xml');
+			$scriptReader->executeModuleScript('zone', 'init.xml');
 		}
 		catch (Exception $e)
 		{

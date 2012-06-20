@@ -48,13 +48,13 @@ class zone_CountryService extends zone_ZoneService
 	 */
 	public function isZipCodeValid($countryId, $zipCode)
 	{
-	    $isValid = true;
+		$isValid = true;
 		$country = ($countryId > 0) ? DocumentHelper::getDocumentInstance($countryId) : null;
-	    if ($country instanceof zone_persistentdocument_zone && $country->getSubzoneCount())
-	    {
-	        $isValid = $country->getDocumentService()->isValidCode($country, $zipCode);
-	    }
-	    return $isValid;
+		if ($country instanceof zone_persistentdocument_zone && $country->getSubzoneCount())
+		{
+			$isValid = $country->getDocumentService()->isValidCode($country, $zipCode);
+		}
+		return $isValid;
 	}
 	
 	/**
