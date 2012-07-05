@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <i18n baseKey="m.zone.document.country" lcid="fr_FR">
-  <include id="m.zone.document.zone"/>
-  <key id="document-name">pays</key>
+	<include id="m.zone.document.zone" />
+	<key id="document-name">pays</key>
 </i18n>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <i18n baseKey="m.zone.messages" lcid="fr_FR">
-  <key id="validate-zipcode">le code postal n'est pas valide. Il est mal formaté, ou ne figure pas dans les zones de livraison possibles.</key>
+	<key id="validate-zipcode">le code postal n'est pas valide. Il est mal formaté, ou ne figure pas dans les zones de livraison possibles.</key>
 </i18n>

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <script>
-  <binding fileName="modules/useractionlogger/persistentdocument/import/useractionlogger_binding.xml"/>
-  <actiondef modulename="zone" actionname="update.zone" label="modules.zone.bo.useractionlogger.update-zone"/>
-  <actiondef modulename="zone" actionname="delete.zone" label="modules.zone.bo.useractionlogger.delete-zone"/>
-  <actiondef modulename="zone" actionname="savepermissions.rootfolder" label="modules.zone.bo.useractionlogger.savepermissions-rootfolder"/>
-  <actiondef modulename="zone" actionname="insert.folder" label="modules.zone.bo.useractionlogger.insert-folder"/>
-  <actiondef modulename="zone" actionname="update.folder" label="modules.zone.bo.useractionlogger.update-folder"/>
-  <actiondef modulename="zone" actionname="savepermissions.folder" label="modules.zone.bo.useractionlogger.savepermissions-folder"/>
-  <actiondef modulename="zone" actionname="insert.country" label="modules.zone.bo.useractionlogger.insert-country"/>
-  <actiondef modulename="zone" actionname="update.country" label="modules.zone.bo.useractionlogger.update-country"/>
-  <actiondef modulename="zone" actionname="deactivated.country" label="modules.zone.bo.useractionlogger.deactivated-country"/>
-  <actiondef modulename="zone" actionname="reactivate.country" label="modules.zone.bo.useractionlogger.reactivate-country"/>
-  <actiondef modulename="zone" actionname="delete.country" label="modules.zone.bo.useractionlogger.delete-country"/>
-  <actiondef modulename="zone" actionname="insert.zone" label="modules.zone.bo.useractionlogger.insert-zone"/>
-  <actiondef modulename="zone" actionname="deactivated.zone" label="modules.zone.bo.useractionlogger.deactivated-zone"/>
-  <actiondef modulename="zone" actionname="reactivate.zone" label="modules.zone.bo.useractionlogger.reactivate-zone"/>
-  <actiondef modulename="zone" actionname="insert.department" label="modules.zone.bo.useractionlogger.insert-department"/>
-  <actiondef modulename="zone" actionname="update.department" label="modules.zone.bo.useractionlogger.update-department"/>
-  <actiondef modulename="zone" actionname="deactivated.department" label="modules.zone.bo.useractionlogger.deactivated-department"/>
-  <actiondef modulename="zone" actionname="reactivate.department" label="modules.zone.bo.useractionlogger.reactivate-department"/>
-  <actiondef modulename="zone" actionname="move.department" label="modules.zone.bo.useractionlogger.move-department"/>
-  <actiondef modulename="zone" actionname="move.country" label="modules.zone.bo.useractionlogger.move-country"/>
-  <actiondef modulename="zone" actionname="delete.department" label="modules.zone.bo.useractionlogger.delete-department"/>
-  <actiondef modulename="zone" actionname="move.zone" label="modules.zone.bo.useractionlogger.move-zone"/>
-  <actiondef modulename="zone" actionname="delete.folder" label="modules.zone.bo.useractionlogger.delete-folder"/>
-  <actiondef modulename="zone" actionname="addtag.country" label="m.zone.bo.useractionlogger.addtag-country"/>
+	<binding fileName="modules/useractionlogger/persistentdocument/import/useractionlogger_binding.xml" />
+	<actiondef modulename="zone" actionname="update.zone" label="modules.zone.bo.useractionlogger.update-zone" />
+	<actiondef modulename="zone" actionname="delete.zone" label="modules.zone.bo.useractionlogger.delete-zone" />
+	<actiondef modulename="zone" actionname="savepermissions.rootfolder" label="modules.zone.bo.useractionlogger.savepermissions-rootfolder" />
+	<actiondef modulename="zone" actionname="insert.folder" label="modules.zone.bo.useractionlogger.insert-folder" />
+	<actiondef modulename="zone" actionname="update.folder" label="modules.zone.bo.useractionlogger.update-folder" />
+	<actiondef modulename="zone" actionname="savepermissions.folder" label="modules.zone.bo.useractionlogger.savepermissions-folder" />
+	<actiondef modulename="zone" actionname="insert.country" label="modules.zone.bo.useractionlogger.insert-country" />
+	<actiondef modulename="zone" actionname="update.country" label="modules.zone.bo.useractionlogger.update-country" />
+	<actiondef modulename="zone" actionname="deactivated.country" label="modules.zone.bo.useractionlogger.deactivated-country" />
+	<actiondef modulename="zone" actionname="reactivate.country" label="modules.zone.bo.useractionlogger.reactivate-country" />
+	<actiondef modulename="zone" actionname="delete.country" label="modules.zone.bo.useractionlogger.delete-country" />
+	<actiondef modulename="zone" actionname="insert.zone" label="modules.zone.bo.useractionlogger.insert-zone" />
+	<actiondef modulename="zone" actionname="deactivated.zone" label="modules.zone.bo.useractionlogger.deactivated-zone" />
+	<actiondef modulename="zone" actionname="reactivate.zone" label="modules.zone.bo.useractionlogger.reactivate-zone" />
+	<actiondef modulename="zone" actionname="insert.department" label="modules.zone.bo.useractionlogger.insert-department" />
+	<actiondef modulename="zone" actionname="update.department" label="modules.zone.bo.useractionlogger.update-department" />
+	<actiondef modulename="zone" actionname="deactivated.department" label="modules.zone.bo.useractionlogger.deactivated-department" />
+	<actiondef modulename="zone" actionname="reactivate.department" label="modules.zone.bo.useractionlogger.reactivate-department" />
+	<actiondef modulename="zone" actionname="move.department" label="modules.zone.bo.useractionlogger.move-department" />
+	<actiondef modulename="zone" actionname="move.country" label="modules.zone.bo.useractionlogger.move-country" />
+	<actiondef modulename="zone" actionname="delete.department" label="modules.zone.bo.useractionlogger.delete-department" />
+	<actiondef modulename="zone" actionname="move.zone" label="modules.zone.bo.useractionlogger.move-zone" />
+	<actiondef modulename="zone" actionname="delete.folder" label="modules.zone.bo.useractionlogger.delete-folder" />
+	<actiondef modulename="zone" actionname="addtag.country" label="m.zone.bo.useractionlogger.addtag-country" />
 </script>

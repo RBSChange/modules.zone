@@ -8,29 +8,29 @@
 	</action>
 	
   <action name="createZone">
-    <parameter name="listWidget"/>
-    <body><![CDATA[
-    	this.createDocumentEditor('modules_zone_zone', listWidget.getSelectedItems()[0].id);
+	<parameter name="listWidget"/>
+	<body><![CDATA[
+		this.createDocumentEditor('modules_zone_zone', listWidget.getSelectedItems()[0].id);
 		]]></body>
   </action>
   
   <action name="createCountry">
-    <parameter name="listWidget"/>
-    <body><![CDATA[
-    	this.createDocumentEditor('modules_zone_country', listWidget.getSelectedItems()[0].id);
+	<parameter name="listWidget"/>
+	<body><![CDATA[
+		this.createDocumentEditor('modules_zone_country', listWidget.getSelectedItems()[0].id);
 		]]></body>
   </action>
   
   <action name="createDepartment">
-    <parameter name="listWidget"/>
-    <body><![CDATA[
-    	this.createDocumentEditor('modules_zone_department', listWidget.getSelectedItems()[0].id);
+	<parameter name="listWidget"/>
+	<body><![CDATA[
+		this.createDocumentEditor('modules_zone_department', listWidget.getSelectedItems()[0].id);
 		]]></body>
   </action>
   
   <action name="setDefaultZone">
-    <parameter name="listWidget"/>
-    <body><![CDATA[
+	<parameter name="listWidget"/>
+	<body><![CDATA[
 		var ids = listWidget.getSelectedIds();
 		this.executeJSON("AddTagJSON", {cmpref: ids[0], tag: 'default_zone'});
 		]]></body>

@@ -2,12 +2,10 @@
 <script>
 	<binding fileName="modules/list/persistentdocument/import/list_binding.xml" />
 	<binding fileName="modules/zone/persistentdocument/import/zone_binding.xml" />
-
 	<systemfolder module="list" relatedmodule="zone">
 		<dynamiclist listid="modules_zone/publishedcountries" label="Tous les pays" description="Liste de tous les pays publiés.">
 		</dynamiclist>
 	</systemfolder>
-
 	<rootfolder module="zone">
 		<folder byLabel="Département français">
 			<department id="FR-01" code="01" label="Ain" />
@@ -28,7 +26,7 @@
 			<department id="FR-16" code="16" label="Charente" />
 			<department id="FR-17" code="17" label="Charente-Maritime" />
 			<department id="FR-18" code="18" label="Cher" />
-			<department id="FR-19" code="19" label="Corrèze" />	
+			<department id="FR-19" code="19" label="Corrèze" />
 			<department id="FR-2A" code="2A" label="Corse-du-Sud" />
 			<department id="FR-2B" code="2B" label="Haute-Corse" />
 			<department id="FR-21" code="21" label="Côte-d'Or" />
@@ -109,11 +107,9 @@
 			<department id="FR-971" code="971" label="Guadeloupe" />
 			<department id="FR-972" code="972" label="Martinique" />
 			<department id="FR-973" code="973" label="Guyane" />
-			<department id="FR-974" code="974" label="La Réunion" />			
+			<department id="FR-974" code="974" label="La Réunion" />
 		</folder>
-		
-		<zone id="FR-20" code="20" label="Corse" subzone-refids="FR-2A,FR-2B"/>
-		
+		<zone id="FR-20" code="20" label="Corse" subzone-refids="FR-2A,FR-2B" />
 		<folder byLabel="Pays">
 			<country code="AD" label="Andorra" />
 			<country code="AE" label="United Arab Emirates" />
@@ -359,16 +355,10 @@
 			<country code="ZR" label="Zaire" />
 			<country code="ZW" label="Zimbabwe" />
 		</folder>
-		
 		<zone code="FR-DOM" label="France d'outre-mer" subzone-refids="FR-971,FR-972,FR-973,FR-974" />
-			
 		<zone id="FR-CONTINENTAL" code="FR-CONTINENTAL" label="France continental" subzone-refids="FR-01,FR-02,FR-03,FR-04,FR-05,FR-06,FR-07,FR-08,FR-09,FR-10,FR-11,FR-12,FR-13,FR-14,FR-15,FR-16,FR-17,FR-18,FR-19,FR-21,FR-22,FR-23,FR-24,FR-25,FR-26,FR-27,FR-28,FR-29,FR-30,FR-31,FR-32,FR-33,FR-34,FR-35,FR-36,FR-37,FR-38,FR-39,FR-40,FR-41,FR-42,FR-43,FR-44,FR-45,FR-46,FR-47,FR-48,FR-49,FR-50,FR-51,FR-52,FR-53,FR-54,FR-55,FR-56,FR-57,FR-58,FR-59,FR-60,FR-61,FR-62,FR-63,FR-64,FR-65,FR-66,FR-67,FR-68,FR-69,FR-70,FR-71,FR-72,FR-73,FR-74,FR-75,FR-76,FR-77,FR-78,FR-79,FR-80,FR-81,FR-82,FR-83,FR-84,FR-85,FR-86,FR-87,FR-88,FR-89,FR-90,FR-91,FR-92,FR-93,FR-94,FR-95" />
-			
-		<zone code="FX" label="France métropolitaine" subzone-refids="FR-CONTINENTAL,FR-20" />	
-			
-		<zone code="FR-ALL" label="France" subzone-refid="FR"/>
-		
-		<zone code="EURO" label="Zone EURO" subzone-refids="DE,AT,BE,ES,FI,FR,IE,IT,LU,NL,PT,GR,SI,CY,MT,SK"/>
-		
+		<zone code="FX" label="France métropolitaine" subzone-refids="FR-CONTINENTAL,FR-20" />
+		<zone code="FR-ALL" label="France" subzone-refid="FR" />
+		<zone code="EURO" label="Zone EURO" subzone-refids="DE,AT,BE,ES,FI,FR,IE,IT,LU,NL,PT,GR,SI,CY,MT,SK" />
 	</rootfolder>
 </script>

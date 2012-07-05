@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <i18n baseKey="m.zone.bo.general" lcid="en_GB">
-  <key id="module-name">area</key>
-  <key id="tree-root-name">area</key>
-  <key id="system-folder-name">area</key>
-  <key id="countries">countries</key>
-  <key id="defaulttag">default area</key>
+	<key id="module-name">area</key>
+	<key id="tree-root-name">area</key>
+	<key id="system-folder-name">area</key>
+	<key id="countries">countries</key>
+	<key id="defaulttag">default area</key>
 </i18n>
