@@ -6,7 +6,7 @@ class zone_ListPublishedcountriesService extends BaseService
 	 */
 	private static $instance;
 	private $items = null;
-
+	
 	/**
 	 * @return customer_ListTitleService
 	 */
@@ -18,18 +18,18 @@ class zone_ListPublishedcountriesService extends BaseService
 		}
 		return self::$instance;
 	}
-
+	
 	/**
 	 * @return array<list_Item>
 	 */
-	public final function getItems()
+	public function getItems()
 	{
-		if($this->items === null)
+		if ($this->items === null)
 		{
 			$query = zone_CountryService::getInstance()->createQuery();
 			$query->add(Restrictions::published());
 			$countries = $query->find();
-
+			
 			$ok = array();
 			foreach ($countries as $country)
 			{
@@ -46,11 +46,11 @@ class zone_ListPublishedcountriesService extends BaseService
 		}
 		return $this->items;
 	}
-
+	
 	/**
 	 * @return String
 	 */
-	public final function getDefaultId()
+	public function getDefaultId()
 	{
 		$items = $this->getItems();
 		return f_util_ArrayUtils::firstElement($items)->getValue();
